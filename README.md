@@ -2,6 +2,8 @@
 
 A local-first autonomous agent that turns raw startup metrics, notes, wins, risks, and asks into an investor-ready update. The system is intentionally multi-stage: it parses input, analyzes trends, plans the message, writes a draft, critiques it, refines it, and formats a final Markdown update.
 
+**Live demo:** [https://investor-update-automation-agent.onrender.com/](https://investor-update-automation-agent.onrender.com/)
+
 ```mermaid
 flowchart LR
   A["Raw startup input"] --> B["Input Parser"]
@@ -29,7 +31,7 @@ Open `http://localhost:3000` after starting the dev server.
 - Next.js, TypeScript, Tailwind, and shadcn-style UI components.
 - Separate agent classes for parsing, analysis, planning, writing, critique, refinement, and formatting.
 - Structured JSON passed between every stage.
-- Trace logging for every stage, visible through the “Show agent steps” panel.
+- Trace logging for every stage, visible through the "Show agent steps" panel.
 - Partial pipeline support with `runStage(stage, rawInput)` or API `stopAfter`.
 - Local JSON storage for drafts and voice profiles in `.local-data/`.
 - Markdown export from the browser.
@@ -66,6 +68,22 @@ npm test
 ```
 
 `npm run demo` loads `examples/growth-quarter.json`, executes all seven stages, prints the stage trace order, and emits the final Markdown update. `npm test` covers parser warnings, analysis trends, writer metric discipline, and deterministic full-pipeline output.
+
+## Deployment
+
+The public demo is deployed on Render using the checked-in `render.yaml` Blueprint. It runs in deterministic `mock` mode, so visitors can use the full pipeline without API keys, paid services, or secrets.
+
+Render build command:
+
+```bash
+npm ci && npm run build
+```
+
+Render start command:
+
+```bash
+npm run start:render
+```
 
 ## Mock Determinism
 
