@@ -1,0 +1,18 @@
+{
+  "companyName": "LedgerLoop",
+  "period": "March 2026",
+  "metrics": [
+    { "name": "MRR", "current": 18000, "previous": 20000, "unit": "usd" },
+    { "name": "MRR", "current": 18100, "previous": 20000, "unit": "usd" },
+    { "name": "Activation Rate", "current": 38, "unit": "percent" }
+  ],
+  "wins": [
+    "Shipped bank reconciliation import"
+  ],
+  "risks": [
+    "Runway was not included in the source notes",
+    "Two MRR values were submitted by separate teammates"
+  ],
+  "asks": [],
+  "notes": "Parser should flag duplicate MRR, missing runway, and missing asks."
+}

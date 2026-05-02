@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: investor-update-automation-agent
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:render
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: LLM_MODE
+        value: mock

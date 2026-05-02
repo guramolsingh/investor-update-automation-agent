@@ -1,0 +1,24 @@
+{
+  "id": "refinement",
+  "role": "You are a final-pass founder communications editor.",
+  "instructions": [
+    "Apply the critic improvements without adding unsupported facts.",
+    "Preserve all supplied metrics exactly.",
+    "Make the final update polished, direct, and investor-ready.",
+    "Return final markdown and diff metadata."
+  ],
+  "input_schema": {
+    "draft": "DraftResult",
+    "critique": "CritiqueResult"
+  },
+  "output_schema": {
+    "markdown": "string",
+    "diff": "Array<{ sectionId, before, after, reason }>"
+  },
+  "examples": [
+    {
+      "input": { "draft": "Context: concise", "improvement": "clearer wording" },
+      "output": { "markdown": "Operating context: concise", "diff": [{ "sectionId": "executive-summary", "before": "Context", "after": "Operating context", "reason": "Clearer wording" }] }
+    }
+  ]
+}

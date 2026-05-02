@@ -1,0 +1,5 @@
+{
+  "default": {
+    "note": "The production writer builds deterministic markdown from structured inputs; this fixture proves adapter determinism."
+  }
+}

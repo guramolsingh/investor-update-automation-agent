@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.local-data/
+*.log
+.env*
+!.env.example
+dist/
+coverage/
+dev-server*.log
+build_resume.py
+Guramol_Pabla_Resume_ATS_Optimized.*
+~$*

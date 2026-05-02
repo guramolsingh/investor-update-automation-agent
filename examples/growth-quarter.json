@@ -1,0 +1,22 @@
+{
+  "companyName": "Northstar AI",
+  "period": "Q1 2026",
+  "metrics": [
+    { "name": "MRR", "current": 84000, "previous": 62000, "unit": "usd" },
+    { "name": "Runway", "current": 14, "previous": 12, "unit": "months" },
+    { "name": "Activation Rate", "current": 42, "previous": 35, "unit": "percent" }
+  ],
+  "wins": [
+    "Closed 18 new design partners",
+    "Launched SOC 2 readiness sprint",
+    "Reduced onboarding time by 31%"
+  ],
+  "risks": [
+    "Enterprise procurement cycles are taking longer than forecast"
+  ],
+  "asks": [
+    "Intro to fintech compliance leaders",
+    "Feedback on VP Sales scorecard"
+  ],
+  "notes": "Focus on disciplined growth, customer pull, and transparent hiring cadence."
+}

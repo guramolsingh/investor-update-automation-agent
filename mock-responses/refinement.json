@@ -1,0 +1,6 @@
+{
+  "default": {
+    "markdown": "Fixture response; deterministic refinement is implemented by the stage class.",
+    "diff": []
+  }
+}

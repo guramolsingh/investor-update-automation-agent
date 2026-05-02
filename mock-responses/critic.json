@@ -1,0 +1,12 @@
+{
+  "default": {
+    "score": 92,
+    "improvements": [
+      {
+        "priority": 1,
+        "issue": "Keep facts traceable.",
+        "recommendation": "Use only supplied metrics."
+      }
+    ]
+  }
+}
